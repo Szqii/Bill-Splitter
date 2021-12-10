@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" sizes="32x32" href="./images/favicon.ico">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Splitter</title>
+</head>
+<body>
+  <div class="contanier">
+    <header>
+      <h1>SPLI</h1>
+      <h1>TTER</h1>
+    </header>
+
+    <main>
+      <div class="menu left-menu">
+        <div class="bill">
+          <label for="bill-input">Bill</label> <br>
+          <input class="bill-input input" name="bill-input" id="bill-input" onkeyup="if(this.value<0){this.value= this.value * -1}" type="number" min="0">
+        </div>
+
+        <div class="people-number">
+          <label for="people-number-input">Number of People</label> <br>
+          <input class="people-number-input input" id="people-number-input" name="people-number-input" onkeyup="if(this.value<0){this.value= this.value * -1}" type="number" min="1">
+        </div>
+        
+        <div class="tip-amount">
+          <label for="btn">Selected tip amount <span class="selectedTipAmount" id="selectedTipAmount">0%</span></label>
+          <div class="btn-container">
+            <button class="amount" data-amount=0>0%</button>
+            <button class="amount" data-amount=10>10%</button>
+            <button class="amount" data-amount=20>20%</button>
+            <button class="amount" data-amount=25>25%</button>
+            <button class="amount" data-amount=50>50%</button>
+            <div class="input-box">
+              <input class="amount custom-input" data-amount=0 id="custom-input" type="number" onkeyup="checkInput(this.value)" placeholder="Custom"></input>
+              <span class="percentage-icon" id="percentage-icon">%</span>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+
+      <div class="menu right-menu">
+          <div class="results">
+            <div class="tip-amount-person">
+              <div class="text-container">
+                <h2>Tip</h2>
+                <span>/person</span>
+              </div>
+              <div>
+                <span class="tip-amount-text money-text" id="tip-amount-text">0$</span>
+              </div>
+            </div>
+            <div class="total">
+              <div class="text-container">
+                <h2>Total</h2>
+                <span>/person</span>
+              </div>
+              <div>
+                <span class="total-text money-text" id="total-text">0$</span>
+              </div>
+            </div>
+
+            <button class="reset" id="reset-btn">Reset</button>
+          </div>
+
+      </div>
+    </main>
+  </div>
+
+  
+  
+
+
+  <script src="script.js"></script>
+</body>
+</html>

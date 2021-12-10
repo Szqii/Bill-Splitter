@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Space+Mono:wght@400;700&display=swap');
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Space Mono', monospace;
+}
+
+body{
+    background-color: #c5e4e7;
+    /* font-family: 'Barlow Semi Condensed', sans-serif; */
+    /* font-family: 'Space Mono', monospace; */
+    min-height: 100vh;
+}
+
+.contanier{
+    margin: 0 auto;
+    max-width: 100%;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    text-align: center;
+    margin: 100px 0;
+    letter-spacing: 10px;
+    color: #8badaf;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+label{
+    color: #96a8aa;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+main {
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0px #00474b;
+}
+
+main .left-menu,
+main .right-menu{
+    flex: 50%;
+}
+
+main .left-menu{
+    padding: 40px;
+    border-radius: 10px;
+}
+
+main .right-menu{
+    background-color: #00474b;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.bill{
+    margin-bottom: 50px;
+}
+
+.tip-amount{
+    margin-top: 50px;
+}
+
+.btn-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-container .amount{
+    margin: 10px;
+    margin-left: 0;
+    width: 100px;
+    height: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #00474b;
+    border: none;
+    border-radius: 8px;
+    transition: .2s all ease-in-out;
+    cursor: pointer;
+    
+}
+
+.btn-container button:hover{
+    background: #9fe8df;
+    color: #00474b;
+}
+
+.btn-container button:active{
+    background-color: #26c2ad;
+    color: #00474b;
+}
+
+.btn-container .custom-input{
+    background-color: #f4f8fb;
+    color: #0b4640;
+    text-align: right;
+    padding: 0 22px;
+    caret-color: #26c2ad;
+    outline: none;
+}
+
+.custom-input::placeholder{
+    text-align: center;
+    letter-spacing: -1px;
+    font-size: 16px;
+}
+
+.custom-input:focus::placeholder {
+    color: transparent;
+}
+
+.percentage-icon{
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #0b4640;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.input-box{
+    position: relative;
+}
+
+.selectedTipAmount{
+    color: #00474b;
+    font-weight: 800;
+}
+
+/* Input design */
+.input{
+    width: 100%;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    color: #0b4640;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: right;
+    outline-color: #26c2ad;
+    cursor: pointer;
+    caret-color: #26c2ad;
+
+    background-color: #f3f8fb;
+    background-position-y: center;
+    background-position-x: 20px;
+    background-repeat: no-repeat;
+    background-size: 12px;
+}
+
+.bill-input{
+    background-image: url(./images/icon-dollar.svg);
+}
+
+.people-number-input{
+    background-image: url(./images/icon-person.svg);
+}
+
+/* Right menu */
+
+.right-menu .money-text{
+    font-size: 40px;
+    color: #28bfac;
+    font-weight: 800;
+}
+
+.tip-amount-person, .total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.text-container{
+    text-align: left;
+}
+
+.text-container span{
+    font-size: 12px;
+    color: #86b6ba;
+    font-weight: 800;
+    margin: 0;
+}
+
+.reset{
+    width: 100%;
+    font-size: 24px;
+    padding: 20px 0;
+    border: none;
+    border-radius: 10px;
+    background: #28bfac;
+    color: #00474b;
+    font-weight: 800;
+    transition: .2s all ease-in-out;
+    cursor: pointer;
+}
+
+.reset:hover{
+    background: #9fe8df;
+}
