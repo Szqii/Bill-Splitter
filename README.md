@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- [Demo is on the way ❤️](#)
+- [Demo on live❤️](https://split-my-bill.netlify.app)
 
 ## Author
 
